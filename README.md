@@ -24,8 +24,8 @@ This installation guide covers setting up cron jobs for automatic scheduling, su
 ### 1. Download the Project
 
 ```bash
-git clone https://github.com/JoshPaulie/delete-after.git
-cd delete-after
+git clone https://github.com/JoshPaulie/delete_after.git
+cd delete_after
 ```
 
 ### 2. Install the Script
@@ -60,7 +60,7 @@ sudo crontab -e
 Add a line to run the cleanup daily at 3 AM (adjust paths as needed):
 
 ```cron
-# Run delete-after cleanup daily at 3:00 AM
+# Run delete_after cleanup daily at 3:00 AM
 0 3 * * * /usr/local/bin/delete_after.py /tmp /var/tmp /opt/shared/downloads
 ```
 
@@ -75,7 +75,7 @@ crontab -e
 Add a line to run the cleanup daily at 3 AM:
 
 ```cron
-# Run delete-after cleanup daily at 3:00 AM
+# Run delete_after cleanup daily at 3:00 AM
 0 3 * * * ~/.local/bin/delete_after.py /home/username/Downloads /home/username/.cache/temp /home/username/workspace/temp
 ```
 

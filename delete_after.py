@@ -351,7 +351,7 @@ class DeleteAfterScript:
         self.logger.info(
             "Scan completed in %.2fs - "
             "Directories: %d, "
-            "Delete-after files: %d, "
+            "delete_after files: %d, "
             "Files deleted: %d, "
             "Errors: %d",
             duration,
@@ -368,7 +368,7 @@ class DeleteAfterScript:
 
 
 def main() -> int:
-    """Run the delete-after script."""
+    """Run the delete_after script."""
     parser = _create_argument_parser()
     args = parser.parse_args()
 
@@ -440,7 +440,7 @@ Valid units: minute(s), hour(s), day(s), week(s), month(s), year(s) (and abbrevi
     parser.add_argument(
         "--version",
         action="version",
-        version=f"delete-after {__version__}",
+        version=f"delete_after {__version__}",
         help="Show version information",
     )
 
